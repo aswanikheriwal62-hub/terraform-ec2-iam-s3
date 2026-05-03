@@ -11,7 +11,7 @@ Component Used
 - S3 (Remote State Backend)
 
 Architecture
-- Terraform → Creates EC2
+- Terraform → Creates S3 bucket & EC2
 - EC2 → Uses IAM Role
 - IAM Role → Grants S3 Access
 - Terraform State → Stored in S3 Backend
