@@ -18,15 +18,15 @@ Architecture
 - IAM Policy → Defines allowed actions (S3 access)
 - Instance Profile → Attaches IAM Role to EC2
 
-IAM Role Block
+IAM Role Block :
 This block creates an IAM Role.
 It defines **who can assume this role** (trust relationship).
 In this case, we allow the EC2 service (`ec2.amazonaws.com`) to assume the role.
 👉 Meaning: EC2 instances are allowed to use this IAM role.
 
-Policy Attatch Block
+Policy Attatch Block :
 In this block we attach policy to above IAM Role to grant access to S3 service
 
-Instance Profile Block
+Instance Profile Block :
 It acts as a bridge between IAM Role and EC2 instance
 Meaning: EC2 cannot directly use IAM Roles, so the Instance Profile attaches the role to EC2.
